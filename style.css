@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Contenedor principal */
+div {
+    background: rgb(143, 53, 53);
+    padding: 2rem 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #020101;
+    margin-bottom: 10px;
+}
+
+/* Estilos del número del contador */
+#contador {
+    font-size: 5rem;
+    margin: 20px 0;
+    transition: all 0.3s ease; /* Para que el cambio de color sea suave */
+}
+
+/* Botones */
+button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%; /* Botones circulares */
+    margin: 0 10px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+#btnSumar {
+    background-color: #737eba;
+    color: rgb(1, 0, 0);
+}
+
+#btnRestar {
+    background-color: #4985a8;
+    color: white;
+}
+
+/* Efectos al pasar el mouse y hacer clic */
+button:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.9);
+}
